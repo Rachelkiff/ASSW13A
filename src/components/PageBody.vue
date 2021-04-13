@@ -1,12 +1,23 @@
 <template>
     <div id="body-container">
-      <h2>Body</h2>
+      <page-greeting></page-greeting>
+      <page-hook></page-hook>
+      <page-image></page-image>
     </div>
 </template>
 
 <script>
+import PageGreeting from './PageGreeting.vue';
+import PageHook from './PageHook.vue';
+import PageImage from './PageImage.vue';
     export default {
-        
+
+        components: {
+             PageGreeting,
+             PageHook,
+             PageImage,
+        },
+       
     }
 </script>
 
